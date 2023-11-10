@@ -8,12 +8,53 @@
 
 <body>
 
-    <h1>Hello world!</h1>
-    <div><img src="img_hello_world.jpg" alt="Hello World from Space" style="width:100%;max-width:640px"></div>
-    <p>This is the first file in my new Git Repo.</p>
-    <p>This line is here to show how merging works.</p>
-    <div><img src="img_hello_git.jpg" alt="Hello Git" style="width:100%;max-width:640px"></div>
+    <nav class="navbar">
+        <li><a href="#" onclick="showPage('home')">Home</a></li>
+        <li><a href="#" onclick="showPage('content')">Content</a></li>
+        <li><a href="#" onclick="showPage('about')">About</a></li>
+        <li><a href="#" onclick="showPage('skill')">Skill</a></li>
+        <li><a href="#" onclick="showPage('education')">Education</a></li>
+        <li><a href="#" onclick="showPage('work')">Work</a></li>
+        <li><a href="#" onclick="showPage('relationship')">Relationship</a></li>
+    </nav>
+    <section id="page">
+        <h1>Hi There</h1>
+        <h1> I am Win Lin <span style="color: gold;"> Aung</span></h1>
 
+    </section>
+
+    <script>
+
+        function showPage(page) {
+            var pageSection = document.getElementById('page');
+            pageSection.innerHTML = '';
+            switch (page) {
+                case 'home':
+                    pageSection.innerHTML = '<h1>Hi There</h1><h1> I am Win Lin <span style = "color: gold;" > Aung</span ></h1> ';
+                    break;
+                case 'content':
+                    pageSection.innerHTML = '<p>Learn more about us on the About page.</p>';
+                    break;
+                case 'about':
+                    pageSection.innerHTML = '<p>Contact us on the Contact page.</p>';
+                    break;
+                case 'skill':
+                    pageSection.innerHTML = '<p>Contact us on the Contact page.</p>';
+                    break;
+                case 'education':
+                    pageSection.innerHTML = '<p>Contact us on the Contact page.</p>';
+                    break;
+                case 'work':
+                    pageSection.innerHTML = '<p>Contact us on the Contact page.</p>';
+                    break;
+                case 'relationship':
+                    pageSection.innerHTML = '<p>Contact us on the Contact page.</p>';
+                    break;
+                default:
+                    pageSection.innerHTML = '<p>Page not found.</p>';
+            }
+        }
+    </script>
 </body>
 
 </html>
