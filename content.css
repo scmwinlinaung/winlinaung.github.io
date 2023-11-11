@@ -3,6 +3,7 @@
     width: 300px;
     height: 300px;
     perspective: 1000px;
+    margin: 10px;
 }
 
 .flip-card-inner {
@@ -45,20 +46,19 @@
 
 
 .card_button {
+    padding: 5px 0px;
     position: absolute;
     bottom: 0;
     left: 0;
     width: 300px;
     background-color: rgb(77, 76, 76);
     border: none;
-    padding: 5px 15px;
     text-align: center;
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    border-radius: 10px;
 }
 
 .card_button span.arrow_right {
@@ -74,4 +74,13 @@
     font-size: 15px;
     font-weight: bold;
     margin-right: 165px;
+}
+
+.flip-card-back ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.flip-card-back li {
+    border-bottom: 1px solid white;
 }

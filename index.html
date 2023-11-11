@@ -29,6 +29,30 @@
             <p class="sub_title"> I am a Software <span style="color: brown;"> Engineer</span></p>
             <button class="button" onclick="showAboutMe()"><span class="text">About Me</span><span
                     class="arrow_down"></span></button>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+
+                        <img src="img/blockchain.jpeg" alt="Blockchain" style="width:300px;height:250px;">
+                        <p style="height: 50px;font-size: 14px;">Blockchain အကြောင်းသောင်းပြောင်းထွေလာအပိုင်း( ၁ )</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <ul>
+                            <li>
+                                <h4>Blockchain</h3>
+                            </li>
+                            <li>
+                                <h4>Javascript</h4>
+                            </li>
+                        </ul>
+
+
+                        <button class="card_button" onclick=""><span class="text">Detail</span><span
+                                class="arrow_right"></span></button>
+                    </div>
+                </div>
+            </div>
+
 
         </section>
 
@@ -50,6 +74,7 @@
                 })
 
                 pageSection.innerHTML = '';
+
                 switch (page) {
 
                     case 'home':
@@ -62,7 +87,97 @@
 
                         break;
                     case 'content':
-                        pageSection.innerHTML = '<div></div>';
+                        pageSection.innerHTML = `<div style="display: flex; align-items: center; justify-content: start; flex-wrap: wrap; ">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+
+                <img src="img/smartcontract.jpeg" alt="Blockchain" style="width:300px;height:250px;">
+                <p style="height: 50px;font-size: 14px;">Blockchain အကြောင်းသောင်းပြောင်းထွေလာအပိုင်း( ၁ )</p>
+            </div>
+            <div class="flip-card-back">
+                <ul>
+                    <li>
+                        <h4>Blockchain</h3>
+                    </li>
+                    <li>
+                        <h4>Javascript</h4>
+                    </li>
+                </ul>
+
+
+                <button class="card_button" onclick=""><span class="text">Detail</span><span
+                        class="arrow_right"></span></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+
+                <img src="img/smartcontract.jpeg" alt="Blockchain" style="width:300px;height:250px;">
+                <p style="height: 50px;font-size: 14px;">Blockchain အကြောင်းသောင်းပြောင်းထွေလာအပိုင်း( ၂ )</p>
+            </div>
+            <div class="flip-card-back">
+                <ul>
+                    <li>
+                        <h4>Blockchain</h3>
+                    </li>
+                    <li>
+                        <h4>Javascript</h4>
+                    </li>
+                </ul>
+
+
+                <button class="card_button" onclick=""><span class="text">Detail</span><span
+                        class="arrow_right"></span></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+
+                <img src="img/web3.webp" alt="Blockchain" style="width:300px;height:250px;">
+                <p style="height: 50px;font-size: 14px;">Web 1.0, Web 2.0 and Web 3.0</p>
+            </div>
+            <div class="flip-card-back">
+                <ul>
+                    <li>
+                        <h4>Web3</h3>
+                    </li>
+                </ul>
+
+
+                <button class="card_button" onclick=""><span class="text">Detail</span><span
+                        class="arrow_right"></span></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+
+                <img src="img/metaverse.webp" alt="Blockchain" style="width:300px;height:250px;">
+                <p style="height: 50px;font-size: 14px;">Metaverse ဒေသနာတော်များ အပိုင်း ( ၁ )</p>
+            </div>
+            <div class="flip-card-back">
+                <ul>
+                    <li>
+                        <h4>Web3</h3>
+                    </li>
+                </ul>
+
+
+                <button class="card_button" onclick=""><span class="text">Detail</span><span
+                        class="arrow_right"></span></button>
+            </div>
+        </div>
+    </div>
+</div>`;
                         break;
                     case 'about':
                         pageSection.innerHTML = '<p>Contact us on the Contact page.</p>';
