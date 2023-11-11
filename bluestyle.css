@@ -1,8 +1,8 @@
 body {
-    background-color: rgba(218, 225, 220, 0.495);
-    /* background-image: url("a.png");
+
+    background-image: url("img/blockchain.jpeg");
     background-repeat: no-repeat;
-    background-size: cover; */
+    background-size: cover;
 
 
 }
@@ -58,7 +58,7 @@ body {
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    background-color: white;
+    background-color: rgba(132, 156, 138, 0.487);
     margin-right: 15px;
 }
 
@@ -143,4 +143,25 @@ body {
     text-decoration-color: rgba(2, 28, 145, 0.991);
     border-bottom: 2px solid black;
     /* padding-bottom: 1px; */
+}
+
+.add_border_bottom {
+    border-bottom: 2px solid black;
+}
+
+.remove_border_bottom {
+    border-bottom: 0px;
+}
+
+.navbar a:visited {
+    border-bottom: 2px solid black;
+    visibility: visible;
+}
+
+
+.profile_chip {
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 15px;
+    float: right;
 }
