@@ -17,44 +17,87 @@
         <li><a href="#" onclick="showPage('content')"><span>Content</span></a></li>
         <li><a href="#" onclick="showPage('home')"><span>Home</span></a></li>
     </nav>
-    <section id="page">
-        <h1>Hi There</h1>
-        <h1> I am Win Lin <span style="color: gold;"> Aung</span></h1>
 
-    </section>
+    <div class="background">
+        <section id="page">
+            <p class="title">Hi There,</p>
+            <p class="title"> I am Win Lin <span style="color: gold;"> Aung</span></p>
+            <p class="sub_title"> I am a Software <span style="color: brown;"> Engineer</span></p>
+            <button class="button" onclick="showAboutMe()"><span class="text">About Me</span><span
+                    class="arrow_down"></span></button>
 
-    <script>
+        </section>
 
-        function showPage(page) {
-            var pageSection = document.getElementById('page');
-            pageSection.innerHTML = '';
-            switch (page) {
-                case 'home':
-                    pageSection.innerHTML = '<h1>Hi There</h1><h1> I am Win Lin <span style = "color: gold;" > Aung</span ></h1> ';
-                    break;
-                case 'content':
-                    pageSection.innerHTML = '<p>Learn more about us on the About page.</p>';
-                    break;
-                case 'about':
-                    pageSection.innerHTML = '<p>Contact us on the Contact page.</p>';
-                    break;
-                case 'skill':
-                    pageSection.innerHTML = '<p>Contact us on the Contact page.</p>';
-                    break;
-                case 'education':
-                    pageSection.innerHTML = '<p>Contact us on the Contact page.</p>';
-                    break;
-                case 'work':
-                    pageSection.innerHTML = '<p>Contact us on the Contact page.</p>';
-                    break;
-                case 'relationship':
-                    pageSection.innerHTML = '<p>Contact us on the Contact page.</p>';
-                    break;
-                default:
-                    pageSection.innerHTML = '<p>Page not found.</p>';
+        <script>
+            let isClickAboutMe = false;
+            let showSocialMediaBtns = false;
+            let pageSection = document.getElementById('page');
+            function showPage(page) {
+
+                pageSection.innerHTML = '';
+                switch (page) {
+                    case 'home':
+                        pageSection.innerHTML = `<p class="title">Hi There,</p>
+            <p class="title"> I am Win Lin <span style="color: gold;"> Aung</span></p>
+            <p class="sub_title"> I am a Software <span style="color: brown;"> Engineer</span></p>
+            <button class="button" onclick="showAboutMe()"><span class="text">About Me</span><span
+                    class="arrow_down"></span></button>`;
+
+                        break;
+                    case 'content':
+                        pageSection.innerHTML = '<p>Learn more about us on the About page.</p>';
+                        break;
+                    case 'about':
+                        pageSection.innerHTML = '<p>Contact us on the Contact page.</p>';
+                        break;
+                    case 'skill':
+                        pageSection.innerHTML = '<p>Contact us on the Contact page.</p>';
+                        break;
+                    case 'education':
+                        pageSection.innerHTML = '<p>Contact us on the Contact page.</p>';
+                        break;
+                    case 'work':
+                        pageSection.innerHTML = '<p>Contact us on the Contact page.</p>';
+                        break;
+                    case 'relationship':
+                        pageSection.innerHTML = '<p>Contact us on the Contact page.</p>';
+                        break;
+                    default:
+                        pageSection.innerHTML = '<p>Page not found.</p>';
+                }
             }
-        }
-    </script>
+            function showAboutMe() {
+                isClickAboutMe = !isClickAboutMe;
+                if (isClickAboutMe) {
+                    showSocialMediaBtns = true
+                } else {
+                    showSocialMediaBtns = false;
+                }
+                //if click showAboutMe then it will show socila media link
+                showSocialMediaBtns ? pageSection.innerHTML += `
+                            <div class="row">
+                            <div class="chip">
+                                <span class="linkedin"></span>
+                            </div>
+                            <div class="chip">
+                                <span class="github"></span>
+                            </div>
+                            <div class="chip">
+                                <span class="discord"></span>
+                            </div>
+                            <div class="chip">
+                                <span class="telegram"></span>
+                            </div>
+                        </div > `: pageSection.innerHTML = `<p class="title">Hi There,</p>
+            <p class="title"> I am Win Lin <span style="color: gold;"> Aung</span></p>
+            <p class="sub_title"> I am a Software <span style="color: brown;"> Engineer</span></p>
+            <button class="button" onclick="showAboutMe()"><span class="text">About Me</span><span
+                    class="arrow_down"></span></button>`;
+
+            }
+        </script>
+
+    </div>
 </body>
 
 </html>
