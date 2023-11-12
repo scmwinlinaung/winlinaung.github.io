@@ -5,6 +5,7 @@
     <title>Hi I am winlinaung</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="content.css">
+    <script src="content/content_card.js" type="text/javascript" defer></script>
 </head>
 
 <body>
@@ -29,29 +30,6 @@
             <p class="sub_title"> I am a Software <span style="color: brown;"> Engineer</span></p>
             <button class="button" onclick="showAboutMe()"><span class="text">About Me</span><span
                     class="arrow_down"></span></button>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-
-                        <img src="img/blockchain.jpeg" alt="Blockchain" style="width:300px;height:250px;">
-                        <p style="height: 50px;font-size: 14px;">Blockchain အကြောင်းသောင်းပြောင်းထွေလာအပိုင်း( ၁ )</p>
-                    </div>
-                    <div class="flip-card-back">
-                        <ul>
-                            <li>
-                                <h4>Blockchain</h3>
-                            </li>
-                            <li>
-                                <h4>Javascript</h4>
-                            </li>
-                        </ul>
-
-
-                        <button class="card_button" onclick=""><span class="text">Detail</span><span
-                                class="arrow_right"></span></button>
-                    </div>
-                </div>
-            </div>
 
 
         </section>
@@ -87,96 +65,25 @@
 
                         break;
                     case 'content':
+
                         pageSection.innerHTML = `<div style="display: flex; align-items: center; justify-content: start; flex-wrap: wrap; ">
-    <div class="flip-card">
-        <div class="flip-card-inner">
-            <div class="flip-card-front">
+   <content-card image="img/smartcontract.jpeg" title="Blockchain အကြောင်းသောင်းပြောင်းထွေလာအပိုင်း( ၁ )"
+                subtitle="Blockchain" language="Javascrip" content-link=""></content-card>
 
-                <img src="img/smartcontract.jpeg" alt="Blockchain" style="width:300px;height:250px;">
-                <p style="height: 50px;font-size: 14px;">Blockchain အကြောင်းသောင်းပြောင်းထွေလာအပိုင်း( ၁ )</p>
-            </div>
-            <div class="flip-card-back">
-                <ul>
-                    <li>
-                        <h4>Blockchain</h3>
-                    </li>
-                    <li>
-                        <h4>Javascript</h4>
-                    </li>
-                </ul>
+<content-card image="img/smartcontract.jpeg" title="Blockchain အကြောင်းသောင်းပြောင်းထွေလာအပိုင်း( ၂ )"
+                subtitle="Blockchain" language="Javascrip" content-link=""></content-card>
 
 
-                <button class="card_button" onclick=""><span class="text">Detail</span><span
-                        class="arrow_right"></span></button>
-            </div>
-        </div>
-    </div>
+<content-card image="img/web3.webp" title="Web 1.0, Web 2.0 and Web 3.0"
+                subtitle="Web3" language="" content-link=""></content-card>
 
-    <div class="flip-card">
-        <div class="flip-card-inner">
-            <div class="flip-card-front">
-
-                <img src="img/smartcontract.jpeg" alt="Blockchain" style="width:300px;height:250px;">
-                <p style="height: 50px;font-size: 14px;">Blockchain အကြောင်းသောင်းပြောင်းထွေလာအပိုင်း( ၂ )</p>
-            </div>
-            <div class="flip-card-back">
-                <ul>
-                    <li>
-                        <h4>Blockchain</h3>
-                    </li>
-                    <li>
-                        <h4>Javascript</h4>
-                    </li>
-                </ul>
+  
+<content-card image="img/metaverse.webp" title="Metaverse ဒေသနာတော်များ အပိုင်း ( ၁ )"
+                subtitle="Web3" language="" content-link=""></content-card>
 
 
-                <button class="card_button" onclick=""><span class="text">Detail</span><span
-                        class="arrow_right"></span></button>
-            </div>
-        </div>
-    </div>
-
-    <div class="flip-card">
-        <div class="flip-card-inner">
-            <div class="flip-card-front">
-
-                <img src="img/web3.webp" alt="Blockchain" style="width:300px;height:250px;">
-                <p style="height: 50px;font-size: 14px;">Web 1.0, Web 2.0 and Web 3.0</p>
-            </div>
-            <div class="flip-card-back">
-                <ul>
-                    <li>
-                        <h4>Web3</h3>
-                    </li>
-                </ul>
-
-
-                <button class="card_button" onclick=""><span class="text">Detail</span><span
-                        class="arrow_right"></span></button>
-            </div>
-        </div>
-    </div>
-
-    <div class="flip-card">
-        <div class="flip-card-inner">
-            <div class="flip-card-front">
-
-                <img src="img/metaverse.webp" alt="Blockchain" style="width:300px;height:250px;">
-                <p style="height: 50px;font-size: 14px;">Metaverse ဒေသနာတော်များ အပိုင်း ( ၁ )</p>
-            </div>
-            <div class="flip-card-back">
-                <ul>
-                    <li>
-                        <h4>Web3</h3>
-                    </li>
-                </ul>
-
-
-                <button class="card_button" onclick=""><span class="text">Detail</span><span
-                        class="arrow_right"></span></button>
-            </div>
-        </div>
-    </div>
+<content-card image="img/smartcontract.jpeg" title="Difference between ERC 20 and ERC 721 ( part 1 )"
+                subtitle="Smart Contract" language="" content-link=""></content-card>
 </div>`;
                         break;
                     case 'about':
@@ -207,20 +114,28 @@
                 }
                 //if click showAboutMe then it will show socila media link
                 showSocialMediaBtns ? pageSection.innerHTML += `
-                            <div class="row">
-                            <div class="chip">
-                                <span class="linkedin"></span>
-                            </div>
-                            <div class="chip">
-                                <span class="github"></span>
-                            </div>
-                            <div class="chip">
-                                <span class="discord"></span>
-                            </div>
-                            <div class="chip">
-                                <span class="telegram"></span>
-                            </div>
-                        </div > `: pageSection.innerHTML = `<img class="profile_chip" src="img/me.png">
+                                 <div class="row"><a href="https://www.linkedin.com/in/win-linaung-36024a168" target="_blank">
+                    <div class="chip">
+                        <span class="linkedin"></span>
+
+                    </div>
+                </a>
+                <a href="https://github.com/scmwinlinaung" target="_blank">
+                    <div class="chip">
+                        <span class="github"></span>
+                    </div>
+                </a>
+                <a href="https://discordapp.com/users/Win#1737" target="_blank">
+                    <div class="chip">
+                        <span class="discord"></span>
+                    </div>
+                </a>
+                <a href="https://t.me/winlinaung" target="_blank">
+                    <div class="chip">
+                        <span class="telegram"></span>
+                    </div>
+                </a>
+            </div>`: pageSection.innerHTML = `<img class="profile_chip" src="img/me.png">
             <p class="title">Hi There,</p>
             <p class="title"> I am Win Lin <span style="color: gold;"> Aung</span></p>
             <p class="sub_title"> I am a Software <span style="color: brown;"> Engineer</span></p>
@@ -228,6 +143,7 @@
                     class="arrow_down"></span></button>`;
 
             }
+
         </script>
 
     </div>
