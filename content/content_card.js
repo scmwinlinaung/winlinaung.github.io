@@ -58,6 +58,7 @@ class ContentCard extends HTMLElement {
             bottom: 0;
             left: 0;
             width: 300px;
+            height: 40px;
             background-color: rgb(77, 76, 76);
             border: none;
             text-align: center;
@@ -69,8 +70,7 @@ class ContentCard extends HTMLElement {
         }
 
         .card_button span.arrow_right {
-            background: url("img/arrow_right.png") no-repeat;
-            /* float: right; */
+            background: url("../img/arrow_right.png") no-repeat;
             width: 30px;
             height: 30px;
         }
@@ -110,9 +110,9 @@ class ContentCard extends HTMLElement {
                     </li>
                 </ul>
 
-                <a class="content-link" href="" target="_blank">
-                <div class="card_button"><span class="text">Detail</span><span
-                        class="arrow_right"></span></div>
+                <a class="card_button" href="" target="_blank">
+               <span class="text">Detail</span><span
+                        class="arrow_right"></span>
                 </a>
             </div>
         </div>
@@ -127,6 +127,8 @@ class ContentCard extends HTMLElement {
     static get observedAttributes() {
         return ["image", "title", "subtitle", "language", "content-link"];
     }
+
+
 
     attributeChangedCallback(name, oldValue, newValue) {
         switch (name) {
@@ -143,7 +145,8 @@ class ContentCard extends HTMLElement {
                 this.shadowRoot.querySelector('.content-language').innerText = newValue;
                 break;
             case 'content-link':
-                this.shadowRoot.querySelector('.content-link').innerText = newValue;
+
+                this.shadowRoot.querySelector('.card_button').href = newValue;
                 break;
         }
     }

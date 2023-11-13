@@ -4,8 +4,8 @@
 <head>
     <title>Hi I am winlinaung</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="content.css">
     <script src="content/content_card.js" type="text/javascript" defer></script>
+<script src="content/content_detail.js" type="text/javascript" defer></script>
 </head>
 
 <body>
@@ -68,10 +68,10 @@
 
                         pageSection.innerHTML = `<div style="display: flex; align-items: center; justify-content: start; flex-wrap: wrap; ">
    <content-card image="img/smartcontract.jpeg" title="Blockchain အကြောင်းသောင်းပြောင်းထွေလာအပိုင်း( ၁ )"
-                subtitle="Blockchain" language="Javascrip" content-link=""></content-card>
+                subtitle="Blockchain" language="Javascrip" content-link="content/lesson_one.html"></content-card>
 
 <content-card image="img/smartcontract.jpeg" title="Blockchain အကြောင်းသောင်းပြောင်းထွေလာအပိုင်း( ၂ )"
-                subtitle="Blockchain" language="Javascrip" content-link=""></content-card>
+                subtitle="Blockchain" language="Javascrip"  content-link="content/lesson_two.html"></content-card>
 
 
 <content-card image="img/web3.webp" title="Web 1.0, Web 2.0 and Web 3.0"
@@ -87,19 +87,19 @@
 </div>`;
                         break;
                     case 'about':
-                        pageSection.innerHTML = '<p>Contact us on the Contact page.</p>';
+                        pageSection.innerHTML = '<p>Loading.</p>';
                         break;
                     case 'skill':
-                        pageSection.innerHTML = '<p>Contact us on the Contact page.</p>';
+                        pageSection.innerHTML = '<p>Loading.</p>';
                         break;
                     case 'education':
-                        pageSection.innerHTML = '<p>Contact us on the Contact page.</p>';
+                        pageSection.innerHTML = '<p>Loading.</p>';
                         break;
                     case 'work':
-                        pageSection.innerHTML = '<p>Contact us on the Contact page.</p>';
+                        pageSection.innerHTML = '<p>Loading.</p>';
                         break;
                     case 'relationship':
-                        pageSection.innerHTML = '<p>Contact us on the Contact page.</p>';
+                        pageSection.innerHTML = '<p>Loading.</p>';
                         break;
                     default:
                         pageSection.innerHTML = '<p>Page not found.</p>';
@@ -142,6 +142,10 @@
             <button class="button" onclick="showAboutMe()"><span class="text">About Me</span><span
                     class="arrow_down"></span></button>`;
 
+            }
+            function goToCardDetail(p1, p2, p3, p4, img1, img2, img3, img4) {
+                pageSection.innerHTML= `<content-detail p1=${p1} p2=${p2} p3=${p3} p4=${p4}
+             img1=${img1} img2=${img2} img3=${img3} img4=${img4}></content-detail>`
             }
 
         </script>
