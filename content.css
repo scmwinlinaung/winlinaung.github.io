@@ -1,16 +1,37 @@
-body {
 
-    /* background-image: url("img/blockchain.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover; */
-
-
-}
 
 p {
+
               text-indent: 50px;
               letter-spacing: 3px;
               font-size: 22px;
-              line-height: 2.2;
+              line-height: 2;
+              word-spacing: 5px;
+}
+
+img {
+    max-width:100%; 
+    height:auto;
+max-height: 100%;
+margin: 10px;
+}
+
+pre{
+padding: 10px;
+background-color: grey;
+letter-spacing: 3px;
+font-size: 22px;
+color: white;
+line-height: 1.5;
+word-spacing: 3px;
+text-wrap: balance;
+}
+code {
+text-indent: 50px;}
+
+span {
+              letter-spacing: 3px;
+              font-size: 22px;
+              line-height: 2;
               word-spacing: 5px;
 }
