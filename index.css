@@ -14,7 +14,7 @@ body {
     font-size: 30px;
 }
 
-.sub_title {
+.sub-title {
     color: navy;
     font-weight: bold;
     margin-left: 20px;
@@ -37,8 +37,8 @@ body {
     border-radius: 10px;
 }
 
-.button span.arrow_down {
-    background: url("img/arrow_down.png") no-repeat;
+.button span.arrow-down {
+    background: url("img/arrow-down.png") no-repeat;
     /* float: right; */
     width: 20px;
     height: 20px;
@@ -49,9 +49,20 @@ body {
     margin-top: 10px;
     margin-left: 20px;
     display: flex;
+    flex-direction: row;
     justify-content: start;
     align-items: center;
 }
+
+.column {
+    margin-top: 10px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
 
 .chip {
     display: inline-block;
@@ -145,11 +156,11 @@ body {
     /* padding-bottom: 1px; */
 }
 
-.add_border_bottom {
+.add-border-bottom {
     border-bottom: 2px solid black;
 }
 
-.remove_border_bottom {
+.remove-border-bottom {
     border-bottom: 0px;
 }
 
@@ -159,9 +170,33 @@ body {
 }
 
 
-.profile_chip {
+.profile-chip {
     border-radius: 50%;
     background-color: white;
     margin-right: 15px;
     float: right;
+    height: 50%;
+    width: 50%;
+}
+
+
+.half-of-screensize-div {
+    height: auto;
+    width: 50%;
+}
+
+.special-p {
+    letter-spacing: 1.7px;
+    font-size: 16px;
+    line-height: 2;
+    word-spacing: 2px;
+}
+
+.skill-card-row {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
 }

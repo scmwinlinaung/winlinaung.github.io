@@ -5,7 +5,18 @@
     <title>Hi I am winlinaung</title>
     <link rel="stylesheet" href="index.css">
     <script src="content/content_card.js" type="text/javascript" defer></script>
-<script src="content/content_detail.js" type="text/javascript" defer></script>
+    <script src="content/content_detail.js" type="text/javascript" defer></script>
+    <script src="common/blockchain_progress_bar.js" type="text/javascript" defer></script>
+    <script src="common/docker_progress_bar.js" type="text/javascript" defer></script>
+    <script src="common/flutter_progress_bar.js" type="text/javascript" defer></script>
+    <script src="common/javascript_progress_bar.js" type="text/javascript" defer></script>
+    <script src="common/java_progress_bar.js" type="text/javascript" defer></script>
+    <script src="common/mongodb_progress_bar.js" type="text/javascript" defer></script>
+    <script src="common/postgresql_progress_bar.js" type="text/javascript" defer></script>
+    <script src="common/react_progress_bar.js" type="text/javascript" defer></script>
+    <script src="common/solidity_progress_bar.js" type="text/javascript" defer></script>
+    <script src="common/web3_progress_bar.js" type="text/javascript" defer></script>
+    <script src="common/skill_card.js" type="text/javascript" defer></script>
 </head>
 
 <body>
@@ -17,90 +28,129 @@
         <li><a id="skill" href="#" onclick="showPage('skill')"><span>Skill</span></a></li>
         <li><a id="about" href="#" onclick="showPage('about')"><span>About</span></a></li>
         <li><a id="content" href="#" onclick="showPage('content')"><span>Content</span></a></li>
-        <li><a id="home" class="add_border_bottom" href="#" onclick="showPage('home')"><span>Home</span></a></li>
+        <li><a id="home" class="add-border-bottom" href="#" onclick="showPage('home')"><span>Home</span></a></li>
         <!-- initially add border bottom for home tab -->
     </nav>
 
     <div class="background">
         <section id="page">
-            <img class="profile_chip" src="img/me.png">
+            <div class="row">
 
-            <p class="title">Hi There,</p>
-            <p class="title"> I am Win Lin <span style="color: gold;"> Aung</span></p>
-            <p class="sub_title"> I am a Software <span style="color: brown;"> Engineer</span></p>
-            <button class="button" onclick="showAboutMe()"><span class="text">About Me</span><span
-                    class="arrow_down"></span></button>
-
+                <div class="half-of-screensize-div">
+                    <p class="title">Hi There,</p>
+                    <p class="title"> I am Win Lin <span style="color: gold;"> Aung</span></p>
+                    <p class="sub-title"> I am a Software <span style="color: brown;"> Engineer</span></p>
+                    <button class="button" onclick="showAboutMe()"><span class="text">About Me</span><span
+                            class="arrow-down"></span></button>
+                </div>
+                <div class="half-of-screensize-div">
+                    <img class="profile-chip" src="img/me.jpeg">
+                </div>
+            </div>
 
         </section>
 
         <script>
+
+            const homeHtml = `   <div class="row">
+                    <div class="half-of-screensize-div">
+                        <p class="title">Hi There,</p>
+                        <p class="title"> I am Win Lin <span style="color: gold;"> Aung</span></p>
+                        <p class="sub-title"> I am a Software <span style="color: brown;"> Engineer</span></p>
+                        <button class="button" onclick="showAboutMe()"><span class="text">About Me</span><span
+                                class="arrow-down"></span></button>
+                    </div>
+                    <div class="half-of-screensize-div">
+                        <img class="profile-chip" src="img/me.jpeg">
+                    </div>
+                    </div>
+                    `;
+            const contentHtml = `<div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; ">
+                            <content-card image="img/smartcontract.jpeg" title="Blockchain အကြောင်းသောင်းပြောင်းထွေလာအပိုင်း( ၁ )"
+                                            subtitle="Blockchain" language="Javascrip" content-link="content/lesson_one.html"></content-card>
+
+                            <content-card image="img/smartcontract.jpeg" title="Blockchain အကြောင်းသောင်းပြောင်းထွေလာအပိုင်း( ၂ )"
+                                            subtitle="Blockchain" language="Javascrip"  content-link="content/lesson_two.html"></content-card>
+
+
+                            <content-card image="img/web3.webp" title="Web 1.0, Web 2.0 and Web 3.0"
+                                            subtitle="Web3" language="" content-link="content/lesson_three.html"></content-card>
+
+                            
+                            <content-card image="img/metaverse.webp" title="Metaverse ဒေသနာတော်များ အပိုင်း ( ၁ )"
+                                            subtitle="Web3" language="" content-link="content/lesson_four.html"></content-card>
+
+
+                            <content-card image="img/smartcontract.jpeg" title="Difference between ERC 20 and ERC 721 ( part 1 )"
+                                            subtitle="Smart Contract" language="" content-link="content/lesson_five.html"></content-card>
+
+                            <content-card image="img/design_pattern.webp" title="What is the Adapter Design Pattern?"
+                                            subtitle="Design Pattern" language="Java" content-link="content/lesson_six.html"></content-card>
+
+                            <content-card image="img/design_pattern.webp" title="What is the observer design pattern ?"
+                                            subtitle="Design Pattern" language="Java" content-link="content/lesson_seven.html"></content-card>
+                            <content-card image="img/design_pattern.webp" title="What is the factory design pattern ?"
+                                            subtitle="Design Pattern" language="Java" content-link="content/lesson_eight.html"></content-card>
+                            <content-card image="img/design_pattern.webp" title="What is the bridge design pattern ?"
+                                            subtitle="Design Pattern" language="Java" content-link="content/lesson_nine.html"></content-card>
+                            </div>`;
             let isClickAboutMe = false;
             let showSocialMediaBtns = false;
-
-            const pageList = ["home", "content", "about", "skill", "education", "work", "relationship"];
-            const pageSection = document.getElementById('page');
+            const pageList = [ "home", "content", "about", "skill", "education", "work", "relationship" ];
+            const pageSection = document.getElementById( 'page' );
             let currentPage = 'home';
-            function showPage(page) {
+            function showPage ( page )
+            {
                 currentPage = page;
-                const currentPageATagId = document.getElementById(page);
-                currentPageATagId.className = "add_border_bottom";
-                const notVistedPageList = pageList.filter((pg) => pg != page);
-                notVistedPageList.forEach((pg) => {
-                    const ATagId = document.getElementById(pg);
-                    ATagId.className = "remove_border_bottom";
-                })
+                const currentPageATagId = document.getElementById( page );
+                currentPageATagId.className = "add-border-bottom";
+                const notVistedPageList = pageList.filter( ( pg ) => pg != page );
+                notVistedPageList.forEach( ( pg ) =>
+                {
+                    const ATagId = document.getElementById( pg );
+                    ATagId.className = "remove-border-bottom";
+                } )
 
                 pageSection.innerHTML = '';
 
-                switch (page) {
+                switch ( page )
+                {
 
                     case 'home':
-                        pageSection.innerHTML = `<img class="profile_chip" src="img/me.png">
-            <p class="title">Hi There,</p>
-            <p class="title"> I am Win Lin <span style="color: gold;"> Aung</span></p>
-            <p class="sub_title"> I am a Software <span style="color: brown;"> Engineer</span></p>
-            <button class="button" onclick="showAboutMe()"><span class="text">About Me</span><span
-                    class="arrow_down"></span></button>`;
+                        pageSection.innerHTML = homeHtml;
 
                         break;
                     case 'content':
 
-                        pageSection.innerHTML = `<div style="display: flex; align-items: center; justify-content: start; flex-wrap: wrap; ">
-   <content-card image="img/smartcontract.jpeg" title="Blockchain အကြောင်းသောင်းပြောင်းထွေလာအပိုင်း( ၁ )"
-                subtitle="Blockchain" language="Javascrip" content-link="content/lesson_one.html"></content-card>
-
-<content-card image="img/smartcontract.jpeg" title="Blockchain အကြောင်းသောင်းပြောင်းထွေလာအပိုင်း( ၂ )"
-                subtitle="Blockchain" language="Javascrip"  content-link="content/lesson_two.html"></content-card>
-
-
-<content-card image="img/web3.webp" title="Web 1.0, Web 2.0 and Web 3.0"
-                subtitle="Web3" language="" content-link="content/lesson_three.html"></content-card>
-
-  
-<content-card image="img/metaverse.webp" title="Metaverse ဒေသနာတော်များ အပိုင်း ( ၁ )"
-                subtitle="Web3" language="" content-link="content/lesson_four.html"></content-card>
-
-
-<content-card image="img/smartcontract.jpeg" title="Difference between ERC 20 and ERC 721 ( part 1 )"
-                subtitle="Smart Contract" language="" content-link="content/lesson_five.html"></content-card>
-
-<content-card image="img/design_pattern.webp" title="What is the Adapter Design Pattern?"
-                subtitle="Design Pattern" language="Java" content-link="content/lesson_six.html"></content-card>
-
-<content-card image="img/design_pattern.webp" title="What is the observer design pattern ?"
-                subtitle="Design Pattern" language="Java" content-link="content/lesson_seven.html"></content-card>
-<content-card image="img/design_pattern.webp" title="What is the factory design pattern ?"
-                subtitle="Design Pattern" language="Java" content-link="content/lesson_eight.html"></content-card>
-<content-card image="img/design_pattern.webp" title="What is the bridge design pattern ?"
-                subtitle="Design Pattern" language="Java" content-link="content/lesson_nine.html"></content-card>
-</div>`;
+                        pageSection.innerHTML = contentHtml;
                         break;
                     case 'about':
-                        pageSection.innerHTML = '<p>Loading.</p>';
+                        pageSection.innerHTML = `Loading`;
                         break;
                     case 'skill':
-                        pageSection.innerHTML = '<p>Loading.</p>';
+                        pageSection.innerHTML = `<div class="column">
+                            <div class="row">
+                                <div class="half-of-screensize-div">
+                                <p class="special-p">5 years experienced Senior Developer with a demonstrated history of working in the information technology and services industry. Skilled in Flutter, java, blockchain,web3js,solidity, javascript and CI/CD tools and docker. Strong engineering professional with a Bachelor of Information Science focused in Information Science from Universuty of Technology(Yatanarpon Cyber City).</p>
+                                </div>
+                                <div class="half-of-screensize-div">
+                                <img class="profile-chip" src="img/me.jpeg"></img>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="skill-card-row">
+                                <skill-card title="Blockchain" subtitle="3 years, 2 Projects"></skill-card>
+                                <skill-card title="Docker" subtitle="2 years, 2 Projects"></skill-card>
+                                <skill-card title="Flutter" subtitle="5 years, 2 Projects"></skill-card>
+                                <skill-card title="Javascript" subtitle="5 years, 5 Projects"></skill-card>
+                                <skill-card title="Java" subtitle="4 years, 2 Projects"></skill-card>
+                                <skill-card title="Mongodb" subtitle="2 years, 3 Projects"></skill-card>
+                                <skill-card title="Postgresql" subtitle="4 years, 2 Projects"></skill-card>
+                                <skill-card title="React" subtitle="4 years, 2 Projects"></skill-card>
+                                <skill-card title="Solidity" subtitle="2 years, 1 Projects"></skill-card>
+                                <skill-card title="Web3" subtitle="2 years, 2 Projects"></skill-card>
+                            </div>
+                            `;
                         break;
                     case 'education':
                         pageSection.innerHTML = '<p>Loading.</p>';
@@ -115,11 +165,14 @@
                         pageSection.innerHTML = '<p>Page not found.</p>';
                 }
             }
-            function showAboutMe() {
+            function showAboutMe ()
+            {
                 isClickAboutMe = !isClickAboutMe;
-                if (isClickAboutMe) {
+                if ( isClickAboutMe )
+                {
                     showSocialMediaBtns = true
-                } else {
+                } else
+                {
                     showSocialMediaBtns = false;
                 }
                 //if click showAboutMe then it will show socila media link
@@ -145,15 +198,10 @@
                         <span class="telegram"></span>
                     </div>
                 </a>
-            </div>`: pageSection.innerHTML = `<img class="profile_chip" src="img/me.png">
-            <p class="title">Hi There,</p>
-            <p class="title"> I am Win Lin <span style="color: gold;"> Aung</span></p>
-            <p class="sub_title"> I am a Software <span style="color: brown;"> Engineer</span></p>
-            <button class="button" onclick="showAboutMe()"><span class="text">About Me</span><span
-                    class="arrow_down"></span></button>`;
+            </div>`: pageSection.innerHTML = homeHtml;
 
             }
-         
+
 
         </script>
 
