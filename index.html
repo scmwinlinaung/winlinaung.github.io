@@ -4,7 +4,7 @@
 <head>
     <title>Hi I am winlinaung</title>
     <link rel="stylesheet" href="css/index.css">
-    <script src="common/education_component.js" type="text/javascript" defer></script>
+
     <script src="common/content_card.js" type="text/javascript" defer></script>
     <script src="common/content_detail.js" type="text/javascript" defer></script>
     <script src="common/blockchain_progress_bar.js" type="text/javascript" defer></script>
@@ -19,7 +19,7 @@
     <script src="common/web3_progress_bar.js" type="text/javascript" defer></script>
     <script src="common/skill_card.js" type="text/javascript" defer></script>
 
-
+    <script src="common/education_component.js" type="text/javascript" defer></script>
 </head>
 
 <body>
@@ -100,6 +100,32 @@
                             <content-card image="img/design_pattern.webp" title="What is the bridge design pattern ?"
                                             subtitle="Design Pattern" language="Java" content-link="content/lesson_nine.html"></content-card>
                             </div>`;
+            const skillHtml = `<div class="column">
+                            <div class="skill-info-row">
+                                <div class="seventy-percentage-of-screensive-div">
+                                <p class="special-p">5 years experienced Senior Developer with a demonstrated history of working in the information technology and services industry. Skilled in Flutter, java, blockchain,web3js,solidity, javascript and CI/CD tools and docker. Strong engineering professional with a Bachelor of Information Science focused in Information Science from Universuty of Technology(Yatanarpon Cyber City).</p>
+                                </div>
+                                <div class= "thirty-percentage-of-screensive-div">
+                                <img class="profile-chip" src="img/me.jpeg"></img>
+                                </div>
+                                </div>
+                            </div>
+                        
+                            <div class="skill-card-row">
+                                
+                                <skill-card title="Blockchain" subtitle="3 years, 2 Projects"></skill-card>
+                                <skill-card title="Docker" subtitle="2 years, 2 Projects"></skill-card>
+                                <skill-card title="Flutter" subtitle="5 years, 2 Projects"></skill-card>
+                                <skill-card title="Javascript" subtitle="5 years, 5 Projects"></skill-card>
+                                <skill-card title="Java" subtitle="4 years, 2 Projects"></skill-card>
+                                <skill-card title="Mongodb" subtitle="2 years, 3 Projects"></skill-card>
+                                <skill-card title="Postgresql" subtitle="4 years, 2 Projects"></skill-card>
+                                <skill-card title="React" subtitle="4 years, 2 Projects"></skill-card>
+                                <skill-card title="Solidity" subtitle="2 years, 1 Projects"></skill-card>
+                                <skill-card title="Web3" subtitle="2 years, 2 Projects"></skill-card>
+                            </div>
+                            `;
+            const educationHtml = `<eduaction-component></education-component>`;
             let isClickAboutMe = false;
             let showSocialMediaBtns = false;
             const pageList = [ "home", "content", "skill", "education", "work", "relationship" ];
@@ -132,34 +158,10 @@
                         break;
 
                     case 'skill':
-                        pageSection.innerHTML = `<div class="column">
-                            <div class="skill-info-row">
-                                <div class="seventy-percentage-of-screensive-div">
-                                <p class="special-p">5 years experienced Senior Developer with a demonstrated history of working in the information technology and services industry. Skilled in Flutter, java, blockchain,web3js,solidity, javascript and CI/CD tools and docker. Strong engineering professional with a Bachelor of Information Science focused in Information Science from Universuty of Technology(Yatanarpon Cyber City).</p>
-                                </div>
-                                <div class= "thirty-percentage-of-screensive-div">
-                                <img class="profile-chip" src="img/me.jpeg"></img>
-                                </div>
-                                </div>
-                            </div>
-                        
-                            <div class="skill-card-row">
-                                
-                                <skill-card title="Blockchain" subtitle="3 years, 2 Projects"></skill-card>
-                                <skill-card title="Docker" subtitle="2 years, 2 Projects"></skill-card>
-                                <skill-card title="Flutter" subtitle="5 years, 2 Projects"></skill-card>
-                                <skill-card title="Javascript" subtitle="5 years, 5 Projects"></skill-card>
-                                <skill-card title="Java" subtitle="4 years, 2 Projects"></skill-card>
-                                <skill-card title="Mongodb" subtitle="2 years, 3 Projects"></skill-card>
-                                <skill-card title="Postgresql" subtitle="4 years, 2 Projects"></skill-card>
-                                <skill-card title="React" subtitle="4 years, 2 Projects"></skill-card>
-                                <skill-card title="Solidity" subtitle="2 years, 1 Projects"></skill-card>
-                                <skill-card title="Web3" subtitle="2 years, 2 Projects"></skill-card>
-                            </div>
-                            `;
+                        pageSection.innerHTML = skillHtml;
                         break;
                     case 'education':
-                        pageSection.innerHTML = `<eduaction-component></education-component>`;
+                        pageSection.innerHTML = educationHtml;
                         break;
                     case 'work':
                         pageSection.innerHTML = ``;
