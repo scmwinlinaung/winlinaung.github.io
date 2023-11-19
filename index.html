@@ -3,9 +3,10 @@
 
 <head>
     <title>Hi I am winlinaung</title>
-    <link rel="stylesheet" href="index.css">
-    <script src="content/content_card.js" type="text/javascript" defer></script>
-    <script src="content/content_detail.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="common/education.js" type="text/javascript" defer></script>
+    <script src="common/content_card.js" type="text/javascript" defer></script>
+    <script src="common/content_detail.js" type="text/javascript" defer></script>
     <script src="common/blockchain_progress_bar.js" type="text/javascript" defer></script>
     <script src="common/docker_progress_bar.js" type="text/javascript" defer></script>
     <script src="common/flutter_progress_bar.js" type="text/javascript" defer></script>
@@ -158,7 +159,7 @@
                             `;
                         break;
                     case 'education':
-                        pageSection.innerHTML = '<p>Loading.</p>';
+                        pageSection.innerHTML = `<eduaction-component></education-component>`;
                         break;
                     case 'work':
                         pageSection.innerHTML = ``;

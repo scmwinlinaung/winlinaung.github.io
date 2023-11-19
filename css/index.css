@@ -1,6 +1,6 @@
 body {
 
-    background-image: url("img/blockchain.jpeg");
+    background-image: url("../img/blockchain.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -38,7 +38,7 @@ body {
 }
 
 .button span.arrow-down {
-    background: url("img/arrow_down.png") no-repeat;
+    background: url("../img/arrow_down.png") no-repeat;
     /* float: right; */
     width: 20px;
     height: 20px;
@@ -58,9 +58,9 @@ body {
     margin-top: 10px;
     margin-left: 20px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: start;
-    align-items: center;
+    align-items: start;
 }
 
 
@@ -74,7 +74,7 @@ body {
 }
 
 .chip span.linkedin {
-    background: url("img/linkedin.png") no-repeat;
+    background: url("../img/linkedin.png") no-repeat;
     width: 30px;
     height: 30px;
     float: left;
@@ -84,7 +84,7 @@ body {
 }
 
 .chip span.github {
-    background: url("img/github.png") no-repeat;
+    background: url("../img/github.png") no-repeat;
     width: 30px;
     height: 30px;
     float: left;
@@ -94,7 +94,7 @@ body {
 }
 
 .chip span.discord {
-    background: url("img/discord.png") no-repeat;
+    background: url("../img/discord.png") no-repeat;
     width: 30px;
     height: 30px;
     float: left;
@@ -104,7 +104,7 @@ body {
 }
 
 .chip span.telegram {
-    background: url("img/telegram.png") no-repeat;
+    background: url("../img/telegram.png") no-repeat;
     width: 30px;
     height: 30px;
     float: left;
