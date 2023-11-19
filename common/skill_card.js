@@ -12,9 +12,10 @@ const style = ` <style>
   
   /* Add some padding inside the card container */
   .container {
-    background: white;
-    padding: 10px 16px;
+    background: #faf5f5;
+    padding: 15px 16px;
     margin-left: 10px;
+    margin-top: 10px;
   }
 </style>
 `

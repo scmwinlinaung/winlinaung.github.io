@@ -1,8 +1,10 @@
 
-class ContentCard extends HTMLElement {
-    constructor() {
+class ContentCard extends HTMLElement
+{
+    constructor()
+    {
         super();
-        this.attachShadow({ mode: 'open' });
+        this.attachShadow( { mode: 'open' } );
         this.shadowRoot.innerHTML = `
         <style>
             .flip-card {
@@ -121,34 +123,38 @@ class ContentCard extends HTMLElement {
     </div>`;
     }
 
-    connectedCallback() {
+    connectedCallback ()
+    {
 
     }
-    static get observedAttributes() {
-        return ["image", "title", "subtitle", "language", "content-link"];
+    static get observedAttributes ()
+    {
+        return [ "image", "title", "subtitle", "language", "content-link" ];
     }
 
 
 
-    attributeChangedCallback(name, oldValue, newValue) {
-        switch (name) {
+    attributeChangedCallback ( name, oldValue, newValue )
+    {
+        switch ( name )
+        {
             case 'image':
-                this.shadowRoot.querySelector('.content-image').src = newValue;
+                this.shadowRoot.querySelector( '.content-image' ).src = newValue;
                 break;
             case 'title':
-                this.shadowRoot.querySelector('.content-title').innerText = newValue;
+                this.shadowRoot.querySelector( '.content-title' ).innerText = newValue;
                 break;
             case 'subtitle':
-                this.shadowRoot.querySelector('.content-subtitle').innerText = newValue;
+                this.shadowRoot.querySelector( '.content-subtitle' ).innerText = newValue;
                 break;
             case 'language':
-                this.shadowRoot.querySelector('.content-language').innerText = newValue;
+                this.shadowRoot.querySelector( '.content-language' ).innerText = newValue;
                 break;
             case 'content-link':
 
-                this.shadowRoot.querySelector('.card_button').href = newValue;
+                this.shadowRoot.querySelector( '.card_button' ).href = newValue;
                 break;
         }
     }
 }
-customElements.define('content-card', ContentCard);
+customElements.define( 'content-card', ContentCard );

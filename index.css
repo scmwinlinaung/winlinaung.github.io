@@ -38,7 +38,7 @@ body {
 }
 
 .button span.arrow-down {
-    background: url("img/arrow-down.png") no-repeat;
+    background: url("img/arrow_down.png") no-repeat;
     /* float: right; */
     width: 20px;
     height: 20px;
@@ -185,11 +185,21 @@ body {
     width: 50%;
 }
 
+.seventy-percentage-of-screensive-div {
+    height: auto;
+    width: 70%;
+}
+
+.thirty-percentage-of-screensive-div {
+    height: auto;
+    width: 30%;
+}
+
 .special-p {
-    letter-spacing: 1.7px;
-    font-size: 16px;
-    line-height: 2;
-    word-spacing: 2px;
+    letter-spacing: 1.3px;
+    font-size: 18px;
+    line-height: 1.5;
+    word-spacing: 1.3px;
 }
 
 .skill-card-row {
@@ -199,4 +209,24 @@ body {
     justify-content: start;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.skill-card-column {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+.skill-info-row {
+
+    margin-top: 5px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+
 }

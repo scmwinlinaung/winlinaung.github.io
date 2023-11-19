@@ -17,6 +17,8 @@
     <script src="common/solidity_progress_bar.js" type="text/javascript" defer></script>
     <script src="common/web3_progress_bar.js" type="text/javascript" defer></script>
     <script src="common/skill_card.js" type="text/javascript" defer></script>
+
+
 </head>
 
 <body>
@@ -26,7 +28,7 @@
         <li><a id="work" href="#" onclick="showPage('work')"><span>Work</span></a></li>
         <li><a id="education" href="#" onclick="showPage('education')"><span>Education</span></a></li>
         <li><a id="skill" href="#" onclick="showPage('skill')"><span>Skill</span></a></li>
-        <li><a id="about" href="#" onclick="showPage('about')"><span>About</span></a></li>
+
         <li><a id="content" href="#" onclick="showPage('content')"><span>Content</span></a></li>
         <li><a id="home" class="add-border-bottom" href="#" onclick="showPage('home')"><span>Home</span></a></li>
         <!-- initially add border bottom for home tab -->
@@ -40,6 +42,7 @@
                     <p class="title">Hi There,</p>
                     <p class="title"> I am Win Lin <span style="color: gold;"> Aung</span></p>
                     <p class="sub-title"> I am a Software <span style="color: brown;"> Engineer</span></p>
+                    <p class="sub-title"><span style="color: #708090;">winlinaung2813@gmail.com</span></p>
                     <button class="button" onclick="showAboutMe()"><span class="text">About Me</span><span
                             class="arrow-down"></span></button>
                 </div>
@@ -57,6 +60,7 @@
                         <p class="title">Hi There,</p>
                         <p class="title"> I am Win Lin <span style="color: gold;"> Aung</span></p>
                         <p class="sub-title"> I am a Software <span style="color: brown;"> Engineer</span></p>
+                        <p class="sub-title"><span style="color: #708090;">winlinaung2813@gmail.com</span></p>
                         <button class="button" onclick="showAboutMe()"><span class="text">About Me</span><span
                                 class="arrow-down"></span></button>
                     </div>
@@ -65,8 +69,12 @@
                     </div>
                     </div>
                     `;
-            const contentHtml = `<div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; ">
-                            <content-card image="img/smartcontract.jpeg" title="Blockchain အကြောင်းသောင်းပြောင်းထွေလာအပိုင်း( ၁ )"
+            const contentHtml = `<div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap;flex-director: row ">
+                <content-card image="img/metaverse.webp" title="Metaverse ဒေသနာတော်များ အပိုင်း ( ၁ )"
+                                            subtitle="Web3" language="" content-link="content/lesson_four.html"></content-card>
+
+           
+                <content-card image="img/smartcontract.jpeg" title="Blockchain အကြောင်းသောင်းပြောင်းထွေလာအပိုင်း( ၁ )"
                                             subtitle="Blockchain" language="Javascrip" content-link="content/lesson_one.html"></content-card>
 
                             <content-card image="img/smartcontract.jpeg" title="Blockchain အကြောင်းသောင်းပြောင်းထွေလာအပိုင်း( ၂ )"
@@ -77,10 +85,7 @@
                                             subtitle="Web3" language="" content-link="content/lesson_three.html"></content-card>
 
                             
-                            <content-card image="img/metaverse.webp" title="Metaverse ဒေသနာတော်များ အပိုင်း ( ၁ )"
-                                            subtitle="Web3" language="" content-link="content/lesson_four.html"></content-card>
-
-
+                     
                             <content-card image="img/smartcontract.jpeg" title="Difference between ERC 20 and ERC 721 ( part 1 )"
                                             subtitle="Smart Contract" language="" content-link="content/lesson_five.html"></content-card>
 
@@ -96,7 +101,7 @@
                             </div>`;
             let isClickAboutMe = false;
             let showSocialMediaBtns = false;
-            const pageList = [ "home", "content", "about", "skill", "education", "work", "relationship" ];
+            const pageList = [ "home", "content", "skill", "education", "work", "relationship" ];
             const pageSection = document.getElementById( 'page' );
             let currentPage = 'home';
             function showPage ( page )
@@ -124,21 +129,21 @@
 
                         pageSection.innerHTML = contentHtml;
                         break;
-                    case 'about':
-                        pageSection.innerHTML = `Loading`;
-                        break;
+
                     case 'skill':
                         pageSection.innerHTML = `<div class="column">
-                            <div class="row">
-                                <div class="half-of-screensize-div">
+                            <div class="skill-info-row">
+                                <div class="seventy-percentage-of-screensive-div">
                                 <p class="special-p">5 years experienced Senior Developer with a demonstrated history of working in the information technology and services industry. Skilled in Flutter, java, blockchain,web3js,solidity, javascript and CI/CD tools and docker. Strong engineering professional with a Bachelor of Information Science focused in Information Science from Universuty of Technology(Yatanarpon Cyber City).</p>
                                 </div>
-                                <div class="half-of-screensize-div">
+                                <div class= "thirty-percentage-of-screensive-div">
                                 <img class="profile-chip" src="img/me.jpeg"></img>
                                 </div>
                                 </div>
                             </div>
+                        
                             <div class="skill-card-row">
+                                
                                 <skill-card title="Blockchain" subtitle="3 years, 2 Projects"></skill-card>
                                 <skill-card title="Docker" subtitle="2 years, 2 Projects"></skill-card>
                                 <skill-card title="Flutter" subtitle="5 years, 2 Projects"></skill-card>
@@ -156,7 +161,7 @@
                         pageSection.innerHTML = '<p>Loading.</p>';
                         break;
                     case 'work':
-                        pageSection.innerHTML = '<p>Loading.</p>';
+                        pageSection.innerHTML = ``;
                         break;
                     case 'relationship':
                         pageSection.innerHTML = '<p>Loading.</p>';
