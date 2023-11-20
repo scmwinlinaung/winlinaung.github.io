@@ -7,8 +7,6 @@ class ContentComponent extends HTMLElement
         this.attachShadow( { mode: 'open' } );
         this.shadowRoot.innerHTML =
             `
-            <style>
-            </style>
             <div style="display: flex; align-items: center; justify-content: start; flex-wrap: wrap;flex-director: row ">
             <content-card image="img/metaverse.webp" title="Metaverse ဒေသနာတော်များ အပိုင်း ( ၁ )" subtitle="Web3" language="" content-link="content/lesson_four.html"></content-card>
             <content-card image="img/smartcontract.jpeg" title="Blockchain အကြောင်းသောင်းပြောင်းထွေလာအပိုင်း( ၁ )" subtitle="Blockchain" language="Javascrip" content-link="content/lesson_one.html"></content-card>
@@ -20,8 +18,6 @@ class ContentComponent extends HTMLElement
                         <content-card image="img/web3.webp" title="Web 1.0, Web 2.0 and Web 3.0"
                                         subtitle="Web3" language="" content-link="content/lesson_three.html"></content-card>
 
-                        
-                 
                         <content-card image="img/smartcontract.jpeg" title="Difference between ERC 20 and ERC 721 ( part 1 )"
                                         subtitle="Smart Contract" language="" content-link="content/lesson_five.html"></content-card>
 

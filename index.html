@@ -4,7 +4,8 @@
 <head>
     <title>Hi I am winlinaung</title>
     <link rel="stylesheet" href="css/index.css">
-
+    <link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=myanmar3' />
+	<link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=zawgyi' />	
     <script src="common/content_card.js" type="text/javascript" defer></script>
     <script src="common/content_detail.js" type="text/javascript" defer></script>
     <script src="common/blockchain_progress_bar.js" type="text/javascript" defer></script>
@@ -22,7 +23,7 @@
     <script src="common/education_component.js" type="text/javascript" defer></script>
     <script src="common/home_component.js" type="text/javascript" defer></script>
     <script src="common/social_media_row.js" type="text/javascript" defer></script>
-    <script src="common/content_component.js" type="text/javascript" defer></script>
+    <!-- <script src="common/content_component.js" type="text/javascript" defer></script> -->
     <script src="common/skill_component.js" type="text/javascript" defer></script>
 </head>
 
@@ -47,7 +48,32 @@
 
             const homeHtml = `<home-component></home-component>
                     `;
-            const contentHtml = `<content-component></content-component>`;
+            const contentHtml = ` <div style="display: flex; align-items: center; justify-content: start; flex-wrap: wrap;flex-director: row ">
+            <content-card image="img/metaverse.webp" title="Metaverse ဒေသနာတော်များ အပိုင်း ( ၁ )" subtitle="Web3" language="" content-link="content/lesson_four.html"></content-card>
+            <content-card image="img/smartcontract.jpeg" title="Blockchain အကြောင်းသောင်းပြောင်းထွေလာအပိုင်း( ၁ )" subtitle="Blockchain" language="Javascrip" content-link="content/lesson_one.html"></content-card>
+
+                        <content-card image="img/smartcontract.jpeg" title="Blockchain အကြောင်းသောင်းပြောင်းထွေလာအပိုင်း( ၂ )"
+                                        subtitle="Blockchain" language="Javascrip"  content-link="content/lesson_two.html"></content-card>
+
+
+                        <content-card image="img/web3.webp" title="Web 1.0, Web 2.0 and Web 3.0"
+                                        subtitle="Web3" language="" content-link="content/lesson_three.html"></content-card>
+
+                        <content-card image="img/smartcontract.jpeg" title="Difference between ERC 20 and ERC 721 ( part 1 )"
+                                        subtitle="Smart Contract" language="" content-link="content/lesson_five.html"></content-card>
+
+                        <content-card image="img/design_pattern.webp" title="What is the Adapter Design Pattern?"
+                                        subtitle="Design Pattern" language="Java" content-link="content/lesson_six.html"></content-card>
+
+                        <content-card image="img/design_pattern.webp" title="What is the observer design pattern ?"
+                                        subtitle="Design Pattern" language="Java" content-link="content/lesson_seven.html"></content-card>
+                        <content-card image="img/design_pattern.webp" title="What is the factory design pattern ?"
+                                        subtitle="Design Pattern" language="Java" content-link="content/lesson_eight.html"></content-card>
+                        <content-card image="img/design_pattern.webp" title="What is the bridge design pattern ?"
+                                        subtitle="Design Pattern" language="Java" content-link="content/lesson_nine.html"></content-card>
+                                        <content-card image="img/design_pattern.webp" title="What is the singleton design pattern ?"
+                                        subtitle="Design Pattern" language="Java" content-link="content/lesson_ten.html"></content-card>
+                        </div>`;
             const skillHtml = `<skill-component></skill-component>`;
             const educationHtml = `<eduaction-component></education-component>`;
             const experienceHtml = `<experience-component></experience-component>`;
