@@ -3,15 +3,25 @@
 
 <head>
     <title></title>
-    <link rel="stylesheet" href="../content.css">
+    <link rel="stylesheet" href="../css/content.css">
 </head>
 
 <body>
-<p>What is the observer design pattern ?</p>
-<p>Observer design pattern ကတော့ behavioral design pattern တွေထဲက တခုဖြစ်ပါတယ် observer pattern အဓိက class သုံးခုပါပါတယ် Subject, Observer နဲ့ Client ပါ observer pattern က object တွေကြားမှာ one-to-many relationship မျိုးထားချင်တဲ့ချိန်မျိုးမှာသုံးပါတယိ ဆိုလိုတာက object တခုခုကို modified လုပ်လိုက်တာ နဲ့ သူရဲ့ dependent object တွေကို notified လှမ်းလုပ်တာမျိုးပါ MVC ( model-view-controller )framework က observer pattern ကိုဘဲသုံးထားတာပါ model က subject အနေနဲ့အလုပ်လုပ်ပါတယ် view တွေကတော့ observer တွေအနေနဲ့ပါ jave message service ကလဲ observer pattern လေးကိုဘဲသုံးထားပါတယ်
-Subject ကတော့ observer နဲ့ client ကြားမှာ attach or detach လုပ်ဖိုပါ အောက်ကပုံမှာဆိုရင် observer နဲ့ MandalayStateObserver, ShanStateObserver ရယ်YangonStateObserver ကြားမှာ attach or detach လုပ်ဖိုသုံးပါတယ်subject ထဲမှာ observer list ကြီးပါပါတယ် သူရဲ့ state တခုခုပြောင်း လဲမှုဖြစ်တိုင်း attach လုပ်ထားတဲ့ observer တွေကို notify လုပ်ပါတယ် observer သုံး ခုရဲ့ update function တွေကိုသွားခေါ်ပါတယ် အောက်က example code လေးကတော့ total vote count တခုခုပြောင်းတိုင်း state တခုချင်းစီမှာ total vote count ပြောင်းကြောင်း notify လုပ်ပီးတော့ print ထုတ်ထားတာပါ</p>
-<img src="../img/lesson_seven_image_one.png"></img>
-<pre>
+    <p>What is the observer design pattern ?</p>
+    <p>Observer design pattern ကတော့ behavioral design pattern တွေထဲက တခုဖြစ်ပါတယ် observer pattern အဓိက class
+        သုံးခုပါပါတယ် Subject, Observer နဲ့ Client ပါ observer pattern က object တွေကြားမှာ one-to-many relationship
+        မျိုးထားချင်တဲ့ချိန်မျိုးမှာသုံးပါတယိ ဆိုလိုတာက object တခုခုကို modified လုပ်လိုက်တာ နဲ့ သူရဲ့ dependent object
+        တွေကို notified လှမ်းလုပ်တာမျိုးပါ MVC ( model-view-controller )framework က observer pattern ကိုဘဲသုံးထားတာပါ
+        model က subject အနေနဲ့အလုပ်လုပ်ပါတယ် view တွေကတော့ observer တွေအနေနဲ့ပါ jave message service ကလဲ observer
+        pattern လေးကိုဘဲသုံးထားပါတယ်
+        Subject ကတော့ observer နဲ့ client ကြားမှာ attach or detach လုပ်ဖိုပါ အောက်ကပုံမှာဆိုရင် observer နဲ့
+        MandalayStateObserver, ShanStateObserver ရယ်YangonStateObserver ကြားမှာ attach or detach လုပ်ဖိုသုံးပါတယ်subject
+        ထဲမှာ observer list ကြီးပါပါတယ် သူရဲ့ state တခုခုပြောင်း လဲမှုဖြစ်တိုင်း attach လုပ်ထားတဲ့ observer တွေကို
+        notify လုပ်ပါတယ် observer သုံး ခုရဲ့ update function တွေကိုသွားခေါ်ပါတယ် အောက်က example code လေးကတော့ total vote
+        count တခုခုပြောင်းတိုင်း state တခုချင်းစီမှာ total vote count ပြောင်းကြောင်း notify လုပ်ပီးတော့ print
+        ထုတ်ထားတာပါ</p>
+    <img src="../img/lesson_seven_image_one.png"></img>
+    <pre>
 <code>
 Subject.java
 
@@ -68,7 +78,7 @@ observer.update();
 }
 </code>
 </pre>
-<pre>
+    <pre>
 <code>
 Observer.java
 
@@ -83,7 +93,7 @@ public abstract void update();
 }
 </code>
 </pre>
-<pre>
+    <pre>
 <code>
 MandalayStateObserver.java
 
@@ -112,7 +122,7 @@ System.out.println(
 }
 </code>
 </pre>
-<pre>
+    <pre>
 <code>
 ShanStateObserver.java
 
@@ -141,7 +151,7 @@ System.out.println(
 }
 </code>
 </pre>
-<pre>
+    <pre>
 <code>
 YangonStateObserver.java
 
@@ -172,7 +182,7 @@ System.out.println(
 
 </code>
 </pre>
-<pre>
+    <pre>
 <code>
 Main.java
 
@@ -206,4 +216,5 @@ subject.setVoteCount(200);
 </code>
 </pre>
 </body>
+
 </html>

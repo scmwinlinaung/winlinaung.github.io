@@ -1,5 +1,5 @@
 
-class EducationComponent extends HTMLElement
+class ExperienceComponent extends HTMLElement
 {
     constructor()
     {
@@ -78,9 +78,19 @@ class EducationComponent extends HTMLElement
                 font-size: 2.5em;
                 font-weight: bold;
             }
+            .chip {
+                display: inline-block;
+                padding: 0 25px;
+                height: 50px;
+                font-size: 16px;
+                line-height: 50px;
+                border-radius: 25px;
+                background-color: #f1f1f1;
+              }
+              
             </style>
             <div class="column">
-            <p class="title">Education</p>
+            <p class="title">Experience</p>
             <div class="left-border-box">
                 <div class="row">
                 <li></li>
@@ -88,9 +98,10 @@ class EducationComponent extends HTMLElement
                         <div class="card">
                                                         
                             <div class="container">
-                                <p class="heading1">Bachelor of Information Science<span class="heading2"> from Yatanarpon Cyber City</span></p>
-                                <h3>2012 - 2018</h3>
-                                <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+                                <p class="heading1">Software Engineer<span class="heading2"> at Immin Pte.Ltd</span></p>
+                                <h3>2020 January - Present</h3>
+                                <p class="chip">Solidity</p> <p class="chip">Web3</p> <p class="chip">Blockchain</p>
+                                <p class="chip">React</p> <p class="chip">Flutter</p> <p class="chip">Java</p>
                             </div>
                         </div>
                     </div>
@@ -101,9 +112,9 @@ class EducationComponent extends HTMLElement
                             <div class="card">
                                                             
                                 <div class="container">
-                                    <p class="heading1">Taxila Institute</p>
-                                    <h3>2018</h3>
-                                    <p>Career Readiness And Professional Development Certificate</p>
+                                    <p class="heading1">Mobile Developer<span class="heading2"> at Seattle Consulting Myanmar Co., Ltd.</span></p>
+                                    <h3>2018 December - 2020 January</h3>
+                                    <p class="chip">Ionic Framework</p>  <p class="chip">Angular</p>  <p class="chip">Javascript</p>
                                 </div>
                             </div>
                         </div>
@@ -112,46 +123,7 @@ class EducationComponent extends HTMLElement
 
                 </div>
 
-                <p class="title">Licenses & Education</p>
-            <div class="left-border-box">
-                <div class="row">
-                <li></li>
-                    <div class="div-border-bottom"></div>
-                        <div class="card">
-                                                        
-                            <div class="container">
-                                <p class="heading1">Udemy</p>
-                                <h3>2022 April</h3>
-                                <p>Metaverse Masterclass-Learn Everything about the metaverse</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                    <li></li>
-                        <div class="div-border-bottom"></div>
-                            <div class="card">
-                                                            
-                                <div class="container">
-                                    <p class="heading1">Udemy</p>
-                                    <h3>2021 September</h3>
-                                    <p>Learn blockchain by building your own in javascript</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                        <li></li>
-                            <div class="div-border-bottom"></div>
-                                <div class="card">
-                                                                
-                                    <div class="container">
-                                        <p class="heading1">Udemy</p>
-                                        <h3>2021 January</h3>
-                                        <p>Basic swift programming and ios</p>
-                                    </div>
-                                </div>
-                            </div>
+             
 
                 </div>
             </div>
@@ -167,4 +139,4 @@ class EducationComponent extends HTMLElement
 
 
 }
-customElements.define( 'eduaction-component', EducationComponent );
+customElements.define( 'experience-component', ExperienceComponent );

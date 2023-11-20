@@ -71,8 +71,8 @@ class ContentCard extends HTMLElement
             cursor: pointer;
         }
 
-        .card_button span.arrow_right {
-            background: url("../img/arrow_right.png") no-repeat;
+        .card_button span.arrow-right {
+            background: url("img/arrow_right.png") no-repeat;
             width: 30px;
             height: 30px;
         }
@@ -114,7 +114,7 @@ class ContentCard extends HTMLElement
 
                 <a class="card_button" href="" target="_blank">
                <span class="text">Detail</span><span
-                        class="arrow_right"></span>
+                        class="arrow-right"></span>
                 </a>
             </div>
         </div>

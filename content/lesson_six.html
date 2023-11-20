@@ -3,16 +3,21 @@
 
 <head>
     <title></title>
-    <link rel="stylesheet" href="../content.css">
+    <link rel="stylesheet" href="../css/content.css">
 </head>
 
 <body>
-<p>What is the Adapter Design Pattern?</p>
-<p>Adapter design pattern ကတော့ design pattern တွေ အများကြီး ရှိတဲ့ထဲကမှ structural design pattern အောက်မှာရှိတဲ့ design pattern တခုပါ သူကလဲ အတော်လေးအသုံးများပါတယ် သူ့ရည်ရွယ်ချက် ကဘာလဲ တခုနဲ့ တခု compatible မဖြစ်တဲ့ object တွေကြားမှာ အတူတွဲအလုပ်လုပ်နိုင်ဖိုပါ ဥပမာ ဗျာ အိမ်တွေမှာ ပလပ်ခုံရှိတယိ အဲပလပ်ခုံမှာ 2 pin ဘဲထိုးလို ရမယ် computer က 3 pin ဆိုရင် ဒီတိုင်းထိုးလိုမရတော့ဘူး ကြားထဲမှာအောက်က ပုံက adapter မျိုးလိုအပ်တယ် adapter design pattern ကလည်းအဲလိုမျိုးအလုပ်လုပ်တယ် လွယ်ကူအောင် အောက်မှာ example နှစ်ခုနဲ့တွဲရှင်းထားပါတယ် ပထမတခု ကတော့ ကိုယ်တိုင်ရေးထားတာပါ ဒုတိယဟာက တော့ refactoring.guru website က example လေးပါ
-</p>
-<p>Example 1
-</p>
-<pre>
+    <p>What is the Adapter Design Pattern?</p>
+    <p>Adapter design pattern ကတော့ design pattern တွေ အများကြီး ရှိတဲ့ထဲကမှ structural design pattern အောက်မှာရှိတဲ့
+        design pattern တခုပါ သူကလဲ အတော်လေးအသုံးများပါတယ် သူ့ရည်ရွယ်ချက် ကဘာလဲ တခုနဲ့ တခု compatible မဖြစ်တဲ့ object
+        တွေကြားမှာ အတူတွဲအလုပ်လုပ်နိုင်ဖိုပါ ဥပမာ ဗျာ အိမ်တွေမှာ ပလပ်ခုံရှိတယိ အဲပလပ်ခုံမှာ 2 pin ဘဲထိုးလို ရမယ်
+        computer က 3 pin ဆိုရင် ဒီတိုင်းထိုးလိုမရတော့ဘူး ကြားထဲမှာအောက်က ပုံက adapter မျိုးလိုအပ်တယ် adapter design
+        pattern ကလည်းအဲလိုမျိုးအလုပ်လုပ်တယ် လွယ်ကူအောင် အောက်မှာ example နှစ်ခုနဲ့တွဲရှင်းထားပါတယ် ပထမတခု ကတော့
+        ကိုယ်တိုင်ရေးထားတာပါ ဒုတိယဟာက တော့ refactoring.guru website က example လေးပါ
+    </p>
+    <p>Example 1
+    </p>
+    <pre>
 <code>
 
 PhotoViewer.java
@@ -24,7 +29,7 @@ public void open(String photoType, String filename);
 }
 </code>
 </pre>
-<pre>
+    <pre>
 <code>
 AdvancedPhotoViewer.java
 
@@ -38,7 +43,7 @@ AdvancedPhotoViewer.java
 </code>
 </pre>
 
-<pre>
+    <pre>
 <code>
 JPGViewer.java
 
@@ -63,7 +68,7 @@ public void openPNG(String filename) {
 }
 </code>
 </pre>
-<pre>
+    <pre>
 <code>
 PNGViewer.java
 
@@ -89,7 +94,7 @@ System.out.println(“Open the png file name = “ + filename);
 
 </code>
 </pre>
-<pre>
+    <pre>
 <code>
 PhotoAdapter.java
 
@@ -134,7 +139,7 @@ advancedPhotoViewer.openPNG(filename);
 
 </code>
 </pre>
-<pre>
+    <pre>
 <code>
 ImageViewer.java
 
@@ -168,7 +173,7 @@ System.out.println(“Invalid image. “ + photoType + “ format not supported�
 
 </code>
 </pre>
-<pre>
+    <pre>
 <code>
 Main.java
 
@@ -191,8 +196,8 @@ imageViewer.open(“gif”, “myPhoto3.gif”);
 
 </code>
 </pre>
-<p>Example 2</p>
-<pre>
+    <p>Example 2</p>
+    <pre>
 <code>
 RoundHole.java
 
@@ -216,7 +221,7 @@ public class RoundHole {
 
 </code>
 </pre>
-<pre>
+    <pre>
 <code>
 RoundPeg.java
 
@@ -235,7 +240,7 @@ public class RoundPeg {
 }
 </code>
 </pre>
-<pre>
+    <pre>
 <code>
 SquarePeg.java
 
@@ -258,7 +263,7 @@ public class SquarePeg {
 }
 </code>
 </pre>
-<pre>
+    <pre>
 <code>
 SquarePegAdapter.java
 
@@ -279,7 +284,7 @@ public class SquarePegAdapter extends RoundPeg {
 }
 </code>
 </pre>
-<pre>
+    <pre>
 <code>
 Demo.java
 
@@ -311,4 +316,5 @@ public class Demo {
 </code>
 </pre>
 </body>
+
 </html>
