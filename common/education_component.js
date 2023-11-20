@@ -90,7 +90,8 @@ class EducationComponent extends HTMLElement
                             <div class="container">
                                 <p class="heading1">Bachelor of Information Science<span class="heading2"> from Yatanarpon Cyber City</span></p>
                                 <h3>2012 - 2018</h3>
-                                <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+                                <p>
+                                A Bachelor of Information Science is an undergraduate degree program that focuses on the study of information, information systems,computer science and the effective use of technology to manage and analyze information</p>
                             </div>
                         </div>
                     </div>
