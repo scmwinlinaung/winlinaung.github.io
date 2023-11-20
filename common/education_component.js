@@ -113,7 +113,7 @@ class EducationComponent extends HTMLElement
 
                 </div>
 
-                <p class="title">Licenses & Education</p>
+                <p class="title">Licenses & Certifications</p>
             <div class="left-border-box">
                 <div class="row">
                 <li></li>
