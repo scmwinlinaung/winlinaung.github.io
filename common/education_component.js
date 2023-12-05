@@ -115,6 +115,20 @@ class EducationComponent extends HTMLElement
 
                 <p class="title">Licenses & Certifications</p>
             <div class="left-border-box">
+
+            <div class="row">
+            <li></li>
+                <div class="div-border-bottom"></div>
+                    <div class="card">
+                                                    
+                        <div class="container">
+                            <p class="heading1">FreeCodeCamp</p>
+                            <h3>2023 December</h3>
+                            <p>JavaScript Algorithms and Data Structures</p>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="row">
                 <li></li>
                     <div class="div-border-bottom"></div>
