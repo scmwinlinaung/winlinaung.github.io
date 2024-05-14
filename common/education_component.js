@@ -168,6 +168,19 @@ class EducationComponent extends HTMLElement
                                 </div>
                             </div>
 
+                            <div class="row">
+                            <li></li>
+                                <div class="div-border-bottom"></div>
+                                    <div class="card">
+                                                                    
+                                        <div class="container">
+                                            <p class="heading1">IBM</p>
+                                            <h3>2024 May</h3>
+                                            <p>Microservices And Serverless</p>
+                                        </div>
+                                    </div>
+                                </div>
+
                 </div>
             </div>
             `
