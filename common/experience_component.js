@@ -92,6 +92,21 @@ class ExperienceComponent extends HTMLElement
             <div class="column">
             <p class="title">Experience</p>
             <div class="left-border-box">
+
+<div class="row">
+                <li></li>
+                    <div class="div-border-bottom"></div>
+                        <div class="card">
+                                                        
+                            <div class="container">
+                                <p class="heading1">Blockchain Engineer<span class="heading2"> at Ever Medical Technologies Co.Ltd</span></p>
+                                <h3>2024 November - Present</h3>
+                                <p class="chip">React</p> <p class="chip">React Native</p>
+                                <p class="chip">Blockchain</p> <p class="chip">Solidity</p> 
+                            </div>
+                        </div>
+                    </div>
+
                 <div class="row">
                 <li></li>
                     <div class="div-border-bottom"></div>
@@ -99,7 +114,7 @@ class ExperienceComponent extends HTMLElement
                                                         
                             <div class="container">
                                 <p class="heading1">Software Engineer<span class="heading2"> at Immin Pte.Ltd</span></p>
-                                <h3>2020 January - Present</h3>
+                                <h3>2020 January - 2024 November</h3>
                                 <p class="chip">Solidity</p> <p class="chip">Web3</p> <p class="chip">Blockchain</p>
                                 <p class="chip">React</p> <p class="chip">Flutter</p> <p class="chip">Java</p>
                             </div>
@@ -119,11 +134,7 @@ class ExperienceComponent extends HTMLElement
                             </div>
                         </div>
                 
-
-
                 </div>
-
-             
 
                 </div>
             </div>
