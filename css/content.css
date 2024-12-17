@@ -1,30 +1,35 @@
-
+@font-face {
+	font-family: 'MyanmarFont';
+	src: url('../fonts/Pyidaungsu-2.5.3_Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+  }
 
 p {
-
-              text-indent: 50px;
-              letter-spacing: 3px;
-              font-size: 22px;
-              line-height: 2;
-              word-spacing: 5px;
+	font-family: 'MyanmarFont', 'Times New Roman', sans-serif;
+    text-indent: 50px;
+    letter-spacing: 3px;
+    font-size: 22px;
+    line-height: 2;
+    word-spacing: 5px;
 }
 
 img {
     max-width:100%; 
     height:auto;
-max-height: 100%;
-margin: 10px;
+	max-height: 100%;
+	margin: 10px;
 }
 
 pre{
-padding: 10px;
-background-color: grey;
-letter-spacing: 3px;
-font-size: 22px;
-color: white;
-line-height: 1.5;
-word-spacing: 3px;
-text-wrap: balance;
+	padding: 10px;
+	background-color: grey;
+	letter-spacing: 3px;
+	font-size: 22px;
+	color: white;
+	line-height: 1.5;
+	word-spacing: 3px;
+	text-wrap: balance;
 }
 code {
 text-indent: 50px;}

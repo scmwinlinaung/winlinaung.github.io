@@ -1,5 +1,15 @@
-body {
+@font-face {
+	font-family: 'MyanmarFont';
+	src: url('../fonts/Pyidaungsu-2.5.3_Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+  }
+html {
+	font-family: 'MyanmarFont', 'Times New Roman', sans-serif;
+}
 
+body {
+	/*font-family: 'MyanmarFont', 'Times New Roman', sans-serif;*/
     background-image: url("../img/blockchain.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
